@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Library</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="title">My Library</div>
+                <button id="add-book">Add Book</button>
+            </div>
+            <hr>
+            <div class="library-container">
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+            <form action="#">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="Harry Potter">
+                <label for="author">Author</label>
+                <input type="text" name="author" placeholder="J.K. Rowling">
+                <label for="year">Year Published</label>
+                <input type="text" name="year" placeholder="1998" >
+                <label for="description">Description</label>
+                <input type="text" name="description" placeholder="This book follows Harry Potter's second year at Hogwarts as he opens the Chamber">
+                <label for="cover-image">Link to Cover Image</label>
+                <input type="text" name="image" placeholder="www.harrypotter.com/cover.png">
+                <div class="modal-buttons">
+                    <button id="submit">Add Book</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
