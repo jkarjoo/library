@@ -77,23 +77,19 @@ function toggleModal() {
     // If modal is NOT active and not edited, remove newBookHandler
     if (!modal.classList.contains("active") && !edited) {
         submitNewBook.removeEventListener("click", newBookHandler);
-        console.log("removed newBookHandler");
     }
     // If modal is NOT active and has been edited, remove editBookHandler
     else if (!modal.classList.contains("active") && edited) {
         submitNewBook.removeEventListener("click", editBook);
         edited = false;
-        console.log("removed editBook");
     }
     // If modal is active and currently edited, add editBookHandler
     else if (edited){
         submitNewBook.addEventListener("click", editBook);
-        console.log("added editBook");
     }
     // Else add newBookHandler
     else {
         submitNewBook.addEventListener("click", newBookHandler);
-        console.log("added newBookHandler");
     }
 }
 // Inputs from modal //
