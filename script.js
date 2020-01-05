@@ -49,7 +49,7 @@ function render() {
             editMode();
             toggleModal();
             currentIndex = button.dataset.editid;
-            populateModal(currentIndex);
+            repopulateModal(currentIndex);
         })
     })
 
@@ -165,17 +165,12 @@ function toggleReadStatus(index) {
     button.classList.contains("true") ? button.textContent = "Read ✓" : button.textContent = "Unread";
 }
 
-function populateModal(index) {
-    let title = document.querySelector("input[name=title]");
-    let author = document.querySelector("input[name=author]");
-    let year = document.querySelector("input[name=year]");
-    let description = document.querySelector("input[name=description]");
-    let img = document.querySelector("input[name=image]");
-    title.value = myLibrary[index].title;
-    author.value = myLibrary[index].author;
-    year.value = myLibrary[index].year;
-    description.value = myLibrary[index].description;
-    img.value = myLibrary[index].image;
+function repopulateModal(index) {
+    titleFromModal.value = myLibrary[index].title;
+    authorFromModal.value = myLibrary[index].author;
+    yearFromModal.value = myLibrary[index].year;
+    descriptionFromModal.value = myLibrary[index].description;
+    imgFromModal.value = myLibrary[index].image;
 }
 
 
