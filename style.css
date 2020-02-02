@@ -58,7 +58,7 @@ body {
 
 /* Containers */
 .library-container {
-    max-height: 85vh;
+    max-height: 80vh;
     padding-right: 20px;
     overflow-y: auto;
 }
