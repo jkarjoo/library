@@ -15,7 +15,7 @@ This is a Library Application where you can keep track of all the books you're r
 ## Demo
 
 Here is the working live demo:
-[https://justinkar.github.io/library/](https://justinkar.github.io/library/)
+[https://jkarjoo.github.io/library/](https://jkarjoo.github.io/library/)
 
 ## Technologies
 
